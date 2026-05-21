@@ -14,4 +14,12 @@ body{
 
 h1{
     margin-bottom: 20px;
+    padding: 40px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
 }
