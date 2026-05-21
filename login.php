@@ -18,11 +18,14 @@ $_SESSION["user"] = $nomUtilisateur;
 // Afficher message de connexion
 echo("Vous êtes connecté!");
 
-//  Et stopper le script
+//  Rediriger la session vers la page "accueil"
 header("Location: accueil.php");
 
+//  Et stopper le script
+exit();
 }
 
+// si la condition n'est pas verifiee, afficher message d'erreur
 else{
     echo("Nom d'utilisateur ou Mot de passe incorrect");
 }
@@ -37,9 +40,9 @@ else{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion_PHP</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-login.css">
 </head>
-<body>
+<body class="login_boy">
     <div class="container">
         <h1>Connexion</h1>
         <form action="#" method="POST">

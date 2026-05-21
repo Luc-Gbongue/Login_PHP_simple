@@ -12,6 +12,9 @@ body{
     height: 100vh;
 }
 
+.accueil_body{
+    background-color: brown;
+}
 .container {
     
     align-items: center;
